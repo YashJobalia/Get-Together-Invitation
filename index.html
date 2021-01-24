@@ -6,8 +6,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -292,8 +290,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     -->
 
-
-
   <script>
 
     $(".bulb-container").hide();
@@ -301,12 +297,11 @@
     $(".balloon-panel").hide();
     $("#photo-slideshow").hide();
     $(".message").hide();
+    $("#start-btns-div").hide();
 
-    function startAudio() {
-      alert("Hello");
-      let audio = document.getElementById("background-audio");
-      audio.play();
-    }
+    $(document).ready(function () {
+      $("#start-btns-div").show();
+    });
 
     function showHome() {
       $("#start-btns-div").hide();
